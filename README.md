@@ -28,3 +28,9 @@ Molecule ID     Molecule type
 -3312           Ionised ethylene (C2H3-)
 3334            Ozone (O3)
 -3334           Superoxide anion (O2-)
+
+Requirements:
+1. install python and VisualStudio
+2. install numpy
+3. install matplotlibary
+
