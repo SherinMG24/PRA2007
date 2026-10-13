@@ -177,3 +177,4 @@ std_difference = np.nanstd(all_differences, axis=0, ddof=1)
 
 To answer the question, I analysed the plots (see graphs "Difference between momentum distributions of ID1 and ID2"). If the error bar *3 crossed the zero line, then plot showed no asymmetry between the molecules.
 
+Looking at the plots, you can see that there is a overall tendency to have error bars below zero and therefore it can be said that the molecule pairs are not asymmetric with the few executions at only a certain momentum. 
