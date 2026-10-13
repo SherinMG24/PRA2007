@@ -42,7 +42,7 @@ week4.2.py --> calculates for all 10 files the average count, standard deviation
 week4.3.py --> takes the average count and standard deviation form the week4.2.py code and calculates the statistical uncertainty with a sigma 3 trash hold & compares the two paired up molecules (211 & -211 , 321 & -321, ...)  for significants 
 week5.2.py --> calculates the momentum of each molecule and then calculates the weighted average and difference between the molecule pairs and plots the difference in distribution as a function of momentum
 
-1. Question :
+# 1. Question :
 ID : (average , standard deviation)
 
 211: (19.949512337472093, 0.03106576179376466),   
@@ -58,7 +58,7 @@ ID : (average , standard deviation)
 3334: (0.001187098532890652, 3.953746458174925e-05),
 -3334: (0.0011515851608191005, 4.818729437508508e-05)
 
-2. Question :
+# 2. Question :
 
 To calculate the significants, the difference between the means was calculated.
 And the difference between the uncertainty using the formular:
@@ -132,7 +132,7 @@ Pair (3122, -3122): Diff = 0.0049026 ± 0.0013830
 Pair (3312, -3312): Diff = 0.0004407 ± 0.0004671
 Pair (3334, -3334): Diff = 0.0000355 ± 0.0000623
 
-3. Question :
+# 3. Question :
 
 my calculations looked like this:
 
@@ -167,10 +167,11 @@ for x, y, z, particle_id in data:
     all_differences.append(difference)
 
 
-# Convert to NumPy array
+#Convert to NumPy array
+
 all_differences = np.array(all_differences)
 
-# Calculate mean and spread in each momentum bin
+#Calculate mean and spread in each momentum bin
 mean_difference = np.nanmean(all_differences, axis=0)
 std_difference = np.nanstd(all_differences, axis=0, ddof=1)
 
